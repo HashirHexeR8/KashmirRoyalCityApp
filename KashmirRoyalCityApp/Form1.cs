@@ -31,5 +31,19 @@ namespace KashmirRoyalCityApp
             mainMenu.Closed += (s, args) => this.Close();
             mainMenu.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUserName_TextChanged(object sender, EventArgs e)
+        {
+            if(tbUserName.Text == "User ID")
+            {
+                tbUserName.Text = "";
+                tbUserName.ForeColor = Color.Black;
+            }
+        }
     }
 }

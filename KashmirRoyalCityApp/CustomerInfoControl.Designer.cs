@@ -28,18 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblProfession = new System.Windows.Forms.Label();
-            this.lblFName = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.lblNIC = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -56,115 +44,9 @@
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(553, 712);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(367, 171);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(553, 664);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Remaining Ammount";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(553, 291);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(367, 39);
-            this.textBox2.TabIndex = 0;
-            // 
-            // lblProfession
-            // 
-            this.lblProfession.AutoSize = true;
-            this.lblProfession.Location = new System.Drawing.Point(553, 243);
-            this.lblProfession.Name = "lblProfession";
-            this.lblProfession.Size = new System.Drawing.Size(124, 32);
-            this.lblProfession.TabIndex = 1;
-            this.lblProfession.Text = "Profession";
-            // 
-            // lblFName
-            // 
-            this.lblFName.AutoSize = true;
-            this.lblFName.Location = new System.Drawing.Point(553, 121);
-            this.lblFName.Name = "lblFName";
-            this.lblFName.Size = new System.Drawing.Size(244, 32);
-            this.lblFName.TabIndex = 1;
-            this.lblFName.Text = "Owner Father\'s Name";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(553, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(367, 39);
-            this.textBox3.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 664);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(185, 32);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Current Address";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(50, 712);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox5.Size = new System.Drawing.Size(367, 171);
-            this.textBox5.TabIndex = 0;
-            // 
-            // lblNIC
-            // 
-            this.lblNIC.AutoSize = true;
-            this.lblNIC.Location = new System.Drawing.Point(50, 243);
-            this.lblNIC.Name = "lblNIC";
-            this.lblNIC.Size = new System.Drawing.Size(68, 32);
-            this.lblNIC.TabIndex = 1;
-            this.lblNIC.Text = "CNIC";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(50, 291);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(367, 39);
-            this.textBox6.TabIndex = 0;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(50, 121);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(155, 32);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Owner Name";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(50, 169);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(367, 39);
-            this.textBox7.TabIndex = 0;
             // 
             // textBox15
             // 
@@ -294,94 +176,31 @@
             this.textBox22.Size = new System.Drawing.Size(367, 39);
             this.textBox22.TabIndex = 0;
             // 
-            // textBox4
+            // label8
             // 
-            this.textBox4.Location = new System.Drawing.Point(553, 567);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(367, 39);
-            this.textBox4.TabIndex = 0;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(-194, 108);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(155, 32);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Owner Name";
             // 
-            // label1
+            // label7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(553, 519);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Email";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(553, 374);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Contact # (Work)";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(553, 422);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(367, 39);
-            this.textBox8.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 519);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(203, 32);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Contact # (Home)";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(50, 567);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(367, 39);
-            this.textBox9.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 374);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(213, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Contact # (Mobile)";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(50, 422);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(367, 39);
-            this.textBox10.TabIndex = 0;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(233, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(483, 78);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Housing Society";
             // 
             // CustomerInfoControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.lblNIC);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.lblFName);
-            this.Controls.Add(this.lblProfession);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
             this.Name = "CustomerInfoControl";
             this.Size = new System.Drawing.Size(993, 940);
             this.ResumeLayout(false);
@@ -390,19 +209,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblProfession;
-        private System.Windows.Forms.Label lblFName;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label lblNIC;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -419,13 +225,7 @@
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
