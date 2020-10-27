@@ -19,7 +19,7 @@ namespace KashmirRoyalCityApp
         public Form1()
         {
             InitializeComponent();
-            sqlConnection.ConnectionString = ("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=C:/Users/Hashir/source/repos/KashmirRoyalCityApp/KashmirRoyalCityApp/KashmirRoyalCityDB.mdf;Integrated Security=True");
+            sqlConnection.ConnectionString = ("Data Source=DESKTOP-KQQ01QD\\SQLEXPRESS;Initial Catalog=C:\\PROGRAM FILES\\MICROSOFT SQL SERVER\\MSSQL15.SQLEXPRESS\\MSSQL\\DATA\\KASHMIRROYALCITYDB.MDF;Integrated Security=True");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,14 +34,14 @@ namespace KashmirRoyalCityApp
            
             if (userName.Length == 0 || userPassword.Length == 0)
             {
-                MessageBox.Show("Both username and password are required");
+                MessageBox.Show("Both username and password are required", "Error");
             }
             else
             {
                 try
                 {
                     sqlConnection.Open();
-                    String loginQuery = $"Select Id FROM user_login where user_name = '{userName}' && password = '{userPassword}'";
+                    String loginQuery = $"Select Id FROM user_login where user_name = '{userName}' AND password = '{userPassword}'";
                     SqlCommand sqlCommand = new SqlCommand(loginQuery, sqlConnection);
                     using (SqlDataReader reader = sqlCommand.ExecuteReader())
                     {
@@ -53,12 +53,16 @@ namespace KashmirRoyalCityApp
                             mainMenu.Closed += (s, args) => this.Close();
                             mainMenu.Show();
                         }
+                        else
+                        {
+                            MessageBox.Show("Inavlid Username or passowrd", "Error");
+                        }
                     }
                     sqlConnection.Close();
                 } 
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error while logging into system please contact admin for support.", "Error");
                 }
             }
         }

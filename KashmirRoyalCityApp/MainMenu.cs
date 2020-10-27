@@ -17,6 +17,16 @@ namespace KashmirRoyalCityApp
         public MainMenu()
         {
             InitializeComponent();
+            CommunicatorClass.initializeCommunicatorClass(mPlotInfoControl, mCustomerInfoControl, mNomineeInfoControl);
+            if (!panelMain.Controls.Contains(mPlotInfoControl))
+            {
+                panelMain.Controls.Add(mPlotInfoControl);
+                mPlotInfoControl.BringToFront();
+            }
+            else
+            {
+                mPlotInfoControl.BringToFront();
+            }
         }
 
         public MainMenu(IContainer components)

@@ -28,89 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNomineeName = new System.Windows.Forms.TextBox();
+            this.lblNomineeName = new System.Windows.Forms.Label();
+            this.tbNomineeFatherName = new System.Windows.Forms.TextBox();
+            this.lblNomineeFatherName = new System.Windows.Forms.Label();
+            this.tbNomineeRelation = new System.Windows.Forms.TextBox();
+            this.lblNomineeRelation = new System.Windows.Forms.Label();
+            this.lblNomineeAddress = new System.Windows.Forms.Label();
+            this.tbNomineeAddress = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbNomineeReq = new System.Windows.Forms.CheckBox();
+            this.btnSubmitForm = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox2
+            // tbNomineeName
             // 
-            this.textBox2.Location = new System.Drawing.Point(58, 221);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(367, 39);
-            this.textBox2.TabIndex = 0;
+            this.tbNomineeName.Location = new System.Drawing.Point(57, 276);
+            this.tbNomineeName.Name = "tbNomineeName";
+            this.tbNomineeName.Size = new System.Drawing.Size(367, 39);
+            this.tbNomineeName.TabIndex = 0;
             // 
-            // label2
+            // lblNomineeName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nominee Name";
+            this.lblNomineeName.AutoSize = true;
+            this.lblNomineeName.Location = new System.Drawing.Point(57, 228);
+            this.lblNomineeName.Name = "lblNomineeName";
+            this.lblNomineeName.Size = new System.Drawing.Size(184, 32);
+            this.lblNomineeName.TabIndex = 1;
+            this.lblNomineeName.Text = "Nominee Name";
             // 
-            // textBox3
+            // tbNomineeFatherName
             // 
-            this.textBox3.Location = new System.Drawing.Point(58, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(367, 39);
-            this.textBox3.TabIndex = 0;
+            this.tbNomineeFatherName.Location = new System.Drawing.Point(57, 398);
+            this.tbNomineeFatherName.Name = "tbNomineeFatherName";
+            this.tbNomineeFatherName.Size = new System.Drawing.Size(367, 39);
+            this.tbNomineeFatherName.TabIndex = 0;
             // 
-            // label3
+            // lblNomineeFatherName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 295);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(273, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Nominee Father\'s Name";
+            this.lblNomineeFatherName.AutoSize = true;
+            this.lblNomineeFatherName.Location = new System.Drawing.Point(57, 350);
+            this.lblNomineeFatherName.Name = "lblNomineeFatherName";
+            this.lblNomineeFatherName.Size = new System.Drawing.Size(273, 32);
+            this.lblNomineeFatherName.TabIndex = 1;
+            this.lblNomineeFatherName.Text = "Nominee Father\'s Name";
             // 
-            // textBox4
+            // tbNomineeRelation
             // 
-            this.textBox4.Location = new System.Drawing.Point(58, 474);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(367, 39);
-            this.textBox4.TabIndex = 0;
+            this.tbNomineeRelation.Location = new System.Drawing.Point(57, 529);
+            this.tbNomineeRelation.Name = "tbNomineeRelation";
+            this.tbNomineeRelation.Size = new System.Drawing.Size(367, 39);
+            this.tbNomineeRelation.TabIndex = 0;
             // 
-            // label4
+            // lblNomineeRelation
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 426);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(258, 32);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Relation with Nominee";
+            this.lblNomineeRelation.AutoSize = true;
+            this.lblNomineeRelation.Location = new System.Drawing.Point(57, 481);
+            this.lblNomineeRelation.Name = "lblNomineeRelation";
+            this.lblNomineeRelation.Size = new System.Drawing.Size(258, 32);
+            this.lblNomineeRelation.TabIndex = 1;
+            this.lblNomineeRelation.Text = "Relation with Nominee";
             // 
-            // label5
+            // lblNomineeAddress
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 548);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(220, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Nominee\'s Address";
+            this.lblNomineeAddress.AutoSize = true;
+            this.lblNomineeAddress.Location = new System.Drawing.Point(57, 603);
+            this.lblNomineeAddress.Name = "lblNomineeAddress";
+            this.lblNomineeAddress.Size = new System.Drawing.Size(220, 32);
+            this.lblNomineeAddress.TabIndex = 1;
+            this.lblNomineeAddress.Text = "Nominee\'s Address";
             // 
-            // textBox1
+            // tbNomineeAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 597);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(367, 171);
-            this.textBox1.TabIndex = 0;
+            this.tbNomineeAddress.Location = new System.Drawing.Point(57, 652);
+            this.tbNomineeAddress.Multiline = true;
+            this.tbNomineeAddress.Name = "tbNomineeAddress";
+            this.tbNomineeAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbNomineeAddress.Size = new System.Drawing.Size(367, 171);
+            this.tbNomineeAddress.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(567, 173);
+            this.label1.Location = new System.Drawing.Point(566, 228);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 32);
             this.label1.TabIndex = 1;
@@ -118,39 +123,94 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(567, 222);
+            this.textBox6.Location = new System.Drawing.Point(566, 277);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox6.Size = new System.Drawing.Size(376, 546);
             this.textBox6.TabIndex = 0;
             // 
-            // checkBox1
+            // cbNomineeReq
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(352, 94);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(247, 36);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Nominee Required";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cbNomineeReq.AutoSize = true;
+            this.cbNomineeReq.Location = new System.Drawing.Point(57, 144);
+            this.cbNomineeReq.Name = "cbNomineeReq";
+            this.cbNomineeReq.Size = new System.Drawing.Size(247, 36);
+            this.cbNomineeReq.TabIndex = 2;
+            this.cbNomineeReq.Text = "Nominee Required";
+            this.cbNomineeReq.UseVisualStyleBackColor = true;
+            this.cbNomineeReq.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // btnSubmitForm
+            // 
+            this.btnSubmitForm.Location = new System.Drawing.Point(760, 861);
+            this.btnSubmitForm.Name = "btnSubmitForm";
+            this.btnSubmitForm.Size = new System.Drawing.Size(182, 52);
+            this.btnSubmitForm.TabIndex = 3;
+            this.btnSubmitForm.Text = "Submit";
+            this.btnSubmitForm.UseVisualStyleBackColor = true;
+            this.btnSubmitForm.Click += new System.EventHandler(this.btnSubmitForm_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(238, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 32);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "*";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(327, 350);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 32);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(316, 481);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(24, 32);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "*";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(276, 603);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(24, 32);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "*";
             // 
             // NomineeInfoControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnSubmitForm);
+            this.Controls.Add(this.cbNomineeReq);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbNomineeAddress);
+            this.Controls.Add(this.lblNomineeAddress);
+            this.Controls.Add(this.lblNomineeRelation);
+            this.Controls.Add(this.tbNomineeRelation);
+            this.Controls.Add(this.lblNomineeFatherName);
+            this.Controls.Add(this.tbNomineeFatherName);
+            this.Controls.Add(this.lblNomineeName);
+            this.Controls.Add(this.tbNomineeName);
             this.Name = "NomineeInfoControl";
             this.Size = new System.Drawing.Size(993, 940);
             this.ResumeLayout(false);
@@ -160,16 +220,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNomineeName;
+        private System.Windows.Forms.Label lblNomineeName;
+        private System.Windows.Forms.TextBox tbNomineeFatherName;
+        private System.Windows.Forms.Label lblNomineeFatherName;
+        private System.Windows.Forms.TextBox tbNomineeRelation;
+        private System.Windows.Forms.Label lblNomineeRelation;
+        private System.Windows.Forms.Label lblNomineeAddress;
+        private System.Windows.Forms.TextBox tbNomineeAddress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbNomineeReq;
+        private System.Windows.Forms.Button btnSubmitForm;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

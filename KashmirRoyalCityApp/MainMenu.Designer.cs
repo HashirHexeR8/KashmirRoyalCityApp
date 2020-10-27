@@ -32,7 +32,6 @@ namespace KashmirRoyalCityApp
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDocuments = new System.Windows.Forms.Button();
             this.btnNomineeInfo = new System.Windows.Forms.Button();
             this.btnCustomerInfo = new System.Windows.Forms.Button();
             this.btnPlotInfo = new System.Windows.Forms.Button();
@@ -57,7 +56,6 @@ namespace KashmirRoyalCityApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnDocuments);
             this.panel1.Controls.Add(this.btnNomineeInfo);
             this.panel1.Controls.Add(this.btnCustomerInfo);
             this.panel1.Controls.Add(this.btnPlotInfo);
@@ -67,48 +65,39 @@ namespace KashmirRoyalCityApp
             this.panel1.Size = new System.Drawing.Size(243, 940);
             this.panel1.TabIndex = 0;
             // 
-            // btnDocuments
-            // 
-            this.btnDocuments.Location = new System.Drawing.Point(-2, 608);
-            this.btnDocuments.Name = "btnDocuments";
-            this.btnDocuments.Size = new System.Drawing.Size(240, 136);
-            this.btnDocuments.TabIndex = 0;
-            this.btnDocuments.Text = "Documents";
-            this.btnDocuments.UseVisualStyleBackColor = true;
-            // 
             // btnNomineeInfo
             // 
-            this.btnNomineeInfo.Location = new System.Drawing.Point(-2, 466);
+            this.btnNomineeInfo.Location = new System.Drawing.Point(11, 532);
             this.btnNomineeInfo.Name = "btnNomineeInfo";
-            this.btnNomineeInfo.Size = new System.Drawing.Size(240, 136);
-            this.btnNomineeInfo.TabIndex = 0;
+            this.btnNomineeInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnNomineeInfo.TabIndex = 3;
             this.btnNomineeInfo.Text = "Nominee Info";
             this.btnNomineeInfo.UseVisualStyleBackColor = true;
             this.btnNomineeInfo.Click += new System.EventHandler(this.btnNomineeInfo_Click);
             // 
             // btnCustomerInfo
             // 
-            this.btnCustomerInfo.Location = new System.Drawing.Point(0, 324);
+            this.btnCustomerInfo.Location = new System.Drawing.Point(11, 393);
             this.btnCustomerInfo.Name = "btnCustomerInfo";
-            this.btnCustomerInfo.Size = new System.Drawing.Size(240, 136);
-            this.btnCustomerInfo.TabIndex = 0;
+            this.btnCustomerInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnCustomerInfo.TabIndex = 2;
             this.btnCustomerInfo.Text = "Customer Info";
             this.btnCustomerInfo.UseVisualStyleBackColor = true;
             this.btnCustomerInfo.Click += new System.EventHandler(this.btnCustomerInfo_Click);
             // 
             // btnPlotInfo
             // 
-            this.btnPlotInfo.Location = new System.Drawing.Point(0, 182);
+            this.btnPlotInfo.Location = new System.Drawing.Point(11, 253);
             this.btnPlotInfo.Name = "btnPlotInfo";
-            this.btnPlotInfo.Size = new System.Drawing.Size(240, 136);
-            this.btnPlotInfo.TabIndex = 0;
+            this.btnPlotInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnPlotInfo.TabIndex = 1;
             this.btnPlotInfo.Text = "Plot Info";
             this.btnPlotInfo.UseVisualStyleBackColor = true;
             this.btnPlotInfo.Click += new System.EventHandler(this.btnPlotInfo_Click);
             // 
             // panelMain
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMain.Location = new System.Drawing.Point(252, 3);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(993, 940);
@@ -121,6 +110,7 @@ namespace KashmirRoyalCityApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -131,7 +121,6 @@ namespace KashmirRoyalCityApp
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDocuments;
         private System.Windows.Forms.Button btnNomineeInfo;
         private System.Windows.Forms.Button btnCustomerInfo;
         private System.Windows.Forms.Button btnPlotInfo;
