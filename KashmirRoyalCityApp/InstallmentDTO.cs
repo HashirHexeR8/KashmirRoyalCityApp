@@ -18,10 +18,20 @@ namespace KashmirRoyalCityApp
         {
 
         }
-        public InstallmentDTO(int installmentAmmount, int totalAmmount, int customerId, string plotRegNo, string installmentDate)
+        public InstallmentDTO(int installmentAmmount, int totalAmmount, int cashReceived, int customerId, string plotRegNo, string installmentDate)
         {
             this.installmentAmmount = installmentAmmount;
-            this.remainingAmmount = totalAmmount - installmentAmmount;
+            this.remainingAmmount = totalAmmount - cashReceived;
+            this.totalAmmount = totalAmmount;
+            this.installmentDate = installmentDate;
+            this.customerId = customerId;
+            this.plotRegNo = plotRegNo;
+        }
+
+        public InstallmentDTO(int installmentAmmount, int remainingAmmount, int totalAmmount, int cashReceived, int customerId, string plotRegNo, string installmentDate)
+        {
+            this.installmentAmmount = installmentAmmount;
+            this.remainingAmmount = remainingAmmount - cashReceived;
             this.totalAmmount = totalAmmount;
             this.installmentDate = installmentDate;
             this.customerId = customerId;

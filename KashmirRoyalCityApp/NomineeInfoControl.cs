@@ -127,7 +127,7 @@ namespace KashmirRoyalCityApp
                     PlotInfoDTO plotInfoDTO = new PlotInfoDTO(plotInfoControl);
                     SqlConnection sqlConnection = new SqlConnection();
                     int customerId = 0;
-                    sqlConnection.ConnectionString = ("Data Source=DESKTOP-KQQ01QD\\SQLEXPRESS;Initial Catalog=C:\\PROGRAM FILES\\MICROSOFT SQL SERVER\\MSSQL15.SQLEXPRESS\\MSSQL\\DATA\\KASHMIRROYALCITYDB.MDF;Integrated Security=True");
+                    sqlConnection.ConnectionString = Constants.ConnectionString;
                     try
                     {
                         sqlConnection.Open();
@@ -139,7 +139,7 @@ namespace KashmirRoyalCityApp
                         {
                             customerId = (int)insertCustomerInfoCommand.ExecuteNonQuery();
                         }
-                        InstallmentDTO installmentInfoDTO = new InstallmentDTO(int.Parse(plotInfoControl.plotInstallmentAmmount), int.Parse(plotInfoControl.cashReceived) + int.Parse(plotInfoControl.remainingAmmount), customerId, plotInfoControl.plotRegNo, plotInfoControl.plotIssueDate);
+                        InstallmentDTO installmentInfoDTO = new InstallmentDTO(int.Parse(plotInfoControl.plotInstallmentAmmount), int.Parse(plotInfoControl.cashReceived) + int.Parse(plotInfoControl.remainingAmmount), int.Parse(plotInfoControl.cashReceived), customerId, plotInfoControl.plotRegNo, plotInfoControl.plotIssueDate);
                         using (SqlCommand insertInstallmentInfoCommand = installmentInfoDTO.insertQuery(sqlConnection))
                         {
                             insertInstallmentInfoCommand.ExecuteNonQuery();

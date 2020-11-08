@@ -13,7 +13,7 @@ namespace KashmirRoyalCityApp
         {
             mPlotInfoControl = plotInfoControl;
             mCustomerInfoControl = customerInfoControl;
-            mPlotInfoControl = plotInfoControl;
+            mNomineeInfoControl = nomineeInfoControl;
         }
     }
 }
