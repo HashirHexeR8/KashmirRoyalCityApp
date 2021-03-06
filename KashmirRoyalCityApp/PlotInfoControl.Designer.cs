@@ -57,126 +57,142 @@
             this.cbPlotTypeNormal = new System.Windows.Forms.CheckBox();
             this.cbPlotTypeCommercial = new System.Windows.Forms.CheckBox();
             this.cbPlotTypeCorner = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbPlotRegNo
             // 
-            this.tbPlotRegNo.Location = new System.Drawing.Point(96, 174);
+            this.tbPlotRegNo.Location = new System.Drawing.Point(74, 136);
+            this.tbPlotRegNo.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotRegNo.Name = "tbPlotRegNo";
-            this.tbPlotRegNo.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotRegNo.Size = new System.Drawing.Size(213, 31);
             this.tbPlotRegNo.TabIndex = 0;
             // 
             // lbRegNo
             // 
             this.lbRegNo.AutoSize = true;
-            this.lbRegNo.Location = new System.Drawing.Point(96, 121);
+            this.lbRegNo.Location = new System.Drawing.Point(74, 95);
+            this.lbRegNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRegNo.Name = "lbRegNo";
-            this.lbRegNo.Size = new System.Drawing.Size(235, 32);
+            this.lbRegNo.Size = new System.Drawing.Size(176, 25);
             this.lbRegNo.TabIndex = 1;
             this.lbRegNo.Text = "Registration Number";
             // 
             // tbPlotNo
             // 
-            this.tbPlotNo.Location = new System.Drawing.Point(96, 319);
+            this.tbPlotNo.Location = new System.Drawing.Point(74, 249);
+            this.tbPlotNo.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotNo.Name = "tbPlotNo";
-            this.tbPlotNo.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotNo.Size = new System.Drawing.Size(213, 31);
             this.tbPlotNo.TabIndex = 0;
             // 
             // lblPlotNumber
             // 
             this.lblPlotNumber.AutoSize = true;
-            this.lblPlotNumber.Location = new System.Drawing.Point(96, 271);
+            this.lblPlotNumber.Location = new System.Drawing.Point(74, 212);
+            this.lblPlotNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlotNumber.Name = "lblPlotNumber";
-            this.lblPlotNumber.Size = new System.Drawing.Size(150, 32);
+            this.lblPlotNumber.Size = new System.Drawing.Size(113, 25);
             this.lblPlotNumber.TabIndex = 1;
             this.lblPlotNumber.Text = "Plot Number";
             // 
             // tbPlotSize
             // 
-            this.tbPlotSize.Location = new System.Drawing.Point(96, 467);
+            this.tbPlotSize.Location = new System.Drawing.Point(74, 365);
+            this.tbPlotSize.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotSize.Name = "tbPlotSize";
-            this.tbPlotSize.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotSize.Size = new System.Drawing.Size(213, 31);
             this.tbPlotSize.TabIndex = 0;
             // 
             // lblPlotSize
             // 
             this.lblPlotSize.AutoSize = true;
-            this.lblPlotSize.Location = new System.Drawing.Point(96, 419);
+            this.lblPlotSize.Location = new System.Drawing.Point(74, 327);
+            this.lblPlotSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlotSize.Name = "lblPlotSize";
-            this.lblPlotSize.Size = new System.Drawing.Size(105, 32);
+            this.lblPlotSize.Size = new System.Drawing.Size(79, 25);
             this.lblPlotSize.TabIndex = 1;
             this.lblPlotSize.Text = "Plot Size";
             // 
             // tbPlotBlockName
             // 
-            this.tbPlotBlockName.Location = new System.Drawing.Point(96, 628);
+            this.tbPlotBlockName.Location = new System.Drawing.Point(74, 491);
+            this.tbPlotBlockName.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotBlockName.Name = "tbPlotBlockName";
-            this.tbPlotBlockName.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotBlockName.Size = new System.Drawing.Size(213, 31);
             this.tbPlotBlockName.TabIndex = 0;
             // 
             // lblPlotBlockName
             // 
             this.lblPlotBlockName.AutoSize = true;
-            this.lblPlotBlockName.Location = new System.Drawing.Point(96, 580);
+            this.lblPlotBlockName.Location = new System.Drawing.Point(74, 453);
+            this.lblPlotBlockName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlotBlockName.Name = "lblPlotBlockName";
-            this.lblPlotBlockName.Size = new System.Drawing.Size(190, 32);
+            this.lblPlotBlockName.Size = new System.Drawing.Size(142, 25);
             this.lblPlotBlockName.TabIndex = 1;
             this.lblPlotBlockName.Text = "Plot Block Name";
             // 
             // tbPlotInstallmentAmmount
             // 
-            this.tbPlotInstallmentAmmount.Location = new System.Drawing.Point(552, 174);
+            this.tbPlotInstallmentAmmount.Location = new System.Drawing.Point(425, 136);
+            this.tbPlotInstallmentAmmount.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotInstallmentAmmount.Name = "tbPlotInstallmentAmmount";
-            this.tbPlotInstallmentAmmount.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotInstallmentAmmount.Size = new System.Drawing.Size(241, 31);
             this.tbPlotInstallmentAmmount.TabIndex = 0;
             // 
             // lblInstallmentAmmount
             // 
             this.lblInstallmentAmmount.AutoSize = true;
-            this.lblInstallmentAmmount.Location = new System.Drawing.Point(552, 121);
+            this.lblInstallmentAmmount.Location = new System.Drawing.Point(425, 95);
+            this.lblInstallmentAmmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInstallmentAmmount.Name = "lblInstallmentAmmount";
-            this.lblInstallmentAmmount.Size = new System.Drawing.Size(246, 32);
+            this.lblInstallmentAmmount.Size = new System.Drawing.Size(185, 25);
             this.lblInstallmentAmmount.TabIndex = 1;
             this.lblInstallmentAmmount.Text = "Installment Ammount";
             // 
             // lblCashReceived
             // 
             this.lblCashReceived.AutoSize = true;
-            this.lblCashReceived.Location = new System.Drawing.Point(552, 271);
+            this.lblCashReceived.Location = new System.Drawing.Point(425, 212);
+            this.lblCashReceived.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCashReceived.Name = "lblCashReceived";
-            this.lblCashReceived.Size = new System.Drawing.Size(167, 32);
+            this.lblCashReceived.Size = new System.Drawing.Size(124, 25);
             this.lblCashReceived.TabIndex = 1;
             this.lblCashReceived.Text = "Cash Received";
             // 
             // tbCashReceived
             // 
-            this.tbCashReceived.Location = new System.Drawing.Point(552, 319);
+            this.tbCashReceived.Location = new System.Drawing.Point(425, 249);
+            this.tbCashReceived.Margin = new System.Windows.Forms.Padding(2);
             this.tbCashReceived.Name = "tbCashReceived";
-            this.tbCashReceived.Size = new System.Drawing.Size(276, 39);
+            this.tbCashReceived.Size = new System.Drawing.Size(241, 31);
             this.tbCashReceived.TabIndex = 0;
             // 
             // lblRemainingAmmount
             // 
             this.lblRemainingAmmount.AutoSize = true;
-            this.lblRemainingAmmount.Location = new System.Drawing.Point(552, 419);
+            this.lblRemainingAmmount.Location = new System.Drawing.Point(425, 327);
+            this.lblRemainingAmmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRemainingAmmount.Name = "lblRemainingAmmount";
-            this.lblRemainingAmmount.Size = new System.Drawing.Size(241, 32);
+            this.lblRemainingAmmount.Size = new System.Drawing.Size(165, 25);
             this.lblRemainingAmmount.TabIndex = 1;
-            this.lblRemainingAmmount.Text = "Remaining Ammount";
+            this.lblRemainingAmmount.Text = "Remaining Amount";
             // 
             // tbPlotRemainingAmmount
             // 
-            this.tbPlotRemainingAmmount.Location = new System.Drawing.Point(552, 467);
+            this.tbPlotRemainingAmmount.Location = new System.Drawing.Point(425, 365);
+            this.tbPlotRemainingAmmount.Margin = new System.Windows.Forms.Padding(2);
             this.tbPlotRemainingAmmount.Name = "tbPlotRemainingAmmount";
-            this.tbPlotRemainingAmmount.Size = new System.Drawing.Size(276, 39);
+            this.tbPlotRemainingAmmount.Size = new System.Drawing.Size(241, 31);
             this.tbPlotRemainingAmmount.TabIndex = 0;
             // 
             // lblPlotIssueDate
             // 
             this.lblPlotIssueDate.AutoSize = true;
-            this.lblPlotIssueDate.Location = new System.Drawing.Point(552, 580);
+            this.lblPlotIssueDate.Location = new System.Drawing.Point(425, 453);
+            this.lblPlotIssueDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlotIssueDate.Name = "lblPlotIssueDate";
-            this.lblPlotIssueDate.Size = new System.Drawing.Size(124, 32);
+            this.lblPlotIssueDate.Size = new System.Drawing.Size(94, 25);
             this.lblPlotIssueDate.TabIndex = 1;
             this.lblPlotIssueDate.Text = "Issue Date";
             // 
@@ -184,18 +200,20 @@
             // 
             this.dpPlotIssueDate.CustomFormat = "dd/MM/yyyy";
             this.dpPlotIssueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpPlotIssueDate.Location = new System.Drawing.Point(552, 626);
+            this.dpPlotIssueDate.Location = new System.Drawing.Point(425, 489);
+            this.dpPlotIssueDate.Margin = new System.Windows.Forms.Padding(2);
             this.dpPlotIssueDate.Name = "dpPlotIssueDate";
-            this.dpPlotIssueDate.Size = new System.Drawing.Size(276, 39);
+            this.dpPlotIssueDate.Size = new System.Drawing.Size(241, 31);
             this.dpPlotIssueDate.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(327, 121);
+            this.label1.Location = new System.Drawing.Point(252, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 32);
+            this.label1.Size = new System.Drawing.Size(20, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "*";
             // 
@@ -203,9 +221,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(714, 271);
+            this.label2.Location = new System.Drawing.Point(549, 212);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 32);
+            this.label2.Size = new System.Drawing.Size(20, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "*";
             // 
@@ -213,9 +232,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(794, 121);
+            this.label3.Location = new System.Drawing.Point(611, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 32);
+            this.label3.Size = new System.Drawing.Size(20, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "*";
             // 
@@ -223,9 +243,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(794, 419);
+            this.label4.Location = new System.Drawing.Point(583, 328);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 32);
+            this.label4.Size = new System.Drawing.Size(20, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "*";
             // 
@@ -233,9 +254,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(194, 419);
+            this.label5.Location = new System.Drawing.Point(149, 327);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 32);
+            this.label5.Size = new System.Drawing.Size(20, 25);
             this.label5.TabIndex = 3;
             this.label5.Text = "*";
             // 
@@ -243,9 +265,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(281, 580);
+            this.label6.Location = new System.Drawing.Point(216, 453);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 32);
+            this.label6.Size = new System.Drawing.Size(20, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "*";
             // 
@@ -253,9 +276,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(672, 580);
+            this.label7.Location = new System.Drawing.Point(517, 453);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 32);
+            this.label7.Size = new System.Drawing.Size(20, 25);
             this.label7.TabIndex = 3;
             this.label7.Text = "*";
             // 
@@ -263,9 +287,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(240, 271);
+            this.label8.Location = new System.Drawing.Point(185, 212);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 32);
+            this.label8.Size = new System.Drawing.Size(20, 25);
             this.label8.TabIndex = 3;
             this.label8.Text = "*";
             // 
@@ -273,27 +298,30 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(207, 697);
+            this.label9.Location = new System.Drawing.Point(159, 545);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 32);
+            this.label9.Size = new System.Drawing.Size(20, 25);
             this.label9.TabIndex = 3;
             this.label9.Text = "*";
             // 
             // lblPlotType
             // 
             this.lblPlotType.AutoSize = true;
-            this.lblPlotType.Location = new System.Drawing.Point(96, 697);
+            this.lblPlotType.Location = new System.Drawing.Point(74, 545);
+            this.lblPlotType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlotType.Name = "lblPlotType";
-            this.lblPlotType.Size = new System.Drawing.Size(113, 32);
+            this.lblPlotType.Size = new System.Drawing.Size(85, 25);
             this.lblPlotType.TabIndex = 1;
             this.lblPlotType.Text = "Plot Type";
             // 
             // cbPlotTypeNormal
             // 
             this.cbPlotTypeNormal.AutoSize = true;
-            this.cbPlotTypeNormal.Location = new System.Drawing.Point(96, 745);
+            this.cbPlotTypeNormal.Location = new System.Drawing.Point(74, 582);
+            this.cbPlotTypeNormal.Margin = new System.Windows.Forms.Padding(2);
             this.cbPlotTypeNormal.Name = "cbPlotTypeNormal";
-            this.cbPlotTypeNormal.Size = new System.Drawing.Size(125, 36);
+            this.cbPlotTypeNormal.Size = new System.Drawing.Size(97, 29);
             this.cbPlotTypeNormal.TabIndex = 4;
             this.cbPlotTypeNormal.Text = "Normal";
             this.cbPlotTypeNormal.UseVisualStyleBackColor = true;
@@ -301,9 +329,10 @@
             // cbPlotTypeCommercial
             // 
             this.cbPlotTypeCommercial.AutoSize = true;
-            this.cbPlotTypeCommercial.Location = new System.Drawing.Point(96, 787);
+            this.cbPlotTypeCommercial.Location = new System.Drawing.Point(74, 615);
+            this.cbPlotTypeCommercial.Margin = new System.Windows.Forms.Padding(2);
             this.cbPlotTypeCommercial.Name = "cbPlotTypeCommercial";
-            this.cbPlotTypeCommercial.Size = new System.Drawing.Size(173, 36);
+            this.cbPlotTypeCommercial.Size = new System.Drawing.Size(132, 29);
             this.cbPlotTypeCommercial.TabIndex = 4;
             this.cbPlotTypeCommercial.Text = "Commercial";
             this.cbPlotTypeCommercial.UseVisualStyleBackColor = true;
@@ -311,17 +340,29 @@
             // cbPlotTypeCorner
             // 
             this.cbPlotTypeCorner.AutoSize = true;
-            this.cbPlotTypeCorner.Location = new System.Drawing.Point(96, 829);
+            this.cbPlotTypeCorner.Location = new System.Drawing.Point(74, 648);
+            this.cbPlotTypeCorner.Margin = new System.Windows.Forms.Padding(2);
             this.cbPlotTypeCorner.Name = "cbPlotTypeCorner";
-            this.cbPlotTypeCorner.Size = new System.Drawing.Size(118, 36);
+            this.cbPlotTypeCorner.Size = new System.Drawing.Size(91, 29);
             this.cbPlotTypeCorner.TabIndex = 4;
             this.cbPlotTypeCorner.Text = "Corner";
             this.cbPlotTypeCorner.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(74, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 26);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Plot Info...";
+            // 
             // PlotInfoControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cbPlotTypeCorner);
             this.Controls.Add(this.cbPlotTypeCommercial);
             this.Controls.Add(this.cbPlotTypeNormal);
@@ -351,8 +392,9 @@
             this.Controls.Add(this.tbPlotNo);
             this.Controls.Add(this.lbRegNo);
             this.Controls.Add(this.tbPlotRegNo);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PlotInfoControl";
-            this.Size = new System.Drawing.Size(993, 940);
+            this.Size = new System.Drawing.Size(792, 734);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,5 +431,6 @@
         private System.Windows.Forms.CheckBox cbPlotTypeNormal;
         private System.Windows.Forms.CheckBox cbPlotTypeCommercial;
         private System.Windows.Forms.CheckBox cbPlotTypeCorner;
+        private System.Windows.Forms.Label label10;
     }
 }
