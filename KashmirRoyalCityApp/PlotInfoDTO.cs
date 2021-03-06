@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Text;
 
 namespace KashmirRoyalCityApp
@@ -33,10 +33,10 @@ namespace KashmirRoyalCityApp
             plotIsCorner = plotInfoControl.isPlotCorner;
         }
 
-        public SqlCommand insertQuery(SqlConnection dbConnection)
+        public SQLiteCommand insertQuery()
         {
             string insertQuery = $"INSERT INTO plot_info (plot_reg_id, plot_size, plot_number, plot_block, plot_price, plot_registration_date, plot_is_normal, plot_is_corner, plot_is_commercial) VALUES(@{Constants.PlotInfoTable.plot_reg_id}, @{Constants.PlotInfoTable.plot_size}, @{Constants.PlotInfoTable.plot_number}, @{Constants.PlotInfoTable.plot_block}, @{Constants.PlotInfoTable.plot_price}, @{Constants.PlotInfoTable.plot_registration_date}, @{Constants.PlotInfoTable.plot_is_normal}, @{Constants.PlotInfoTable.plot_is_corner}, @{Constants.PlotInfoTable.plot_is_commercial})";
-            SqlCommand insertCommand = new SqlCommand(insertQuery, dbConnection);
+            SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, DBRunner.getDBConnection());
             insertCommand.Parameters.AddWithValue($"@{Constants.PlotInfoTable.plot_reg_id}", plotRegNo);
             insertCommand.Parameters.AddWithValue($"@{Constants.PlotInfoTable.plot_size}", plotSize);
             insertCommand.Parameters.AddWithValue($"@{Constants.PlotInfoTable.plot_number}", plotNumber);

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Text;
 
 namespace KashmirRoyalCityApp
@@ -38,10 +38,10 @@ namespace KashmirRoyalCityApp
             this.plotRegNo = plotRegNo;
         }
 
-        public SqlCommand insertQuery(SqlConnection dbConnection)
+        public SQLiteCommand insertQuery()
         {
             string insertQuery = $"INSERT INTO installment_record VALUES ( @{Constants.InstallmentRecordTable.installment_ammount}, @{Constants.InstallmentRecordTable.remaining_ammount}, @{Constants.InstallmentRecordTable.total_ammount}, @{Constants.InstallmentRecordTable.customer_id}, @{Constants.InstallmentRecordTable.plot_reg_no}, @{Constants.InstallmentRecordTable.installment_date})";
-            SqlCommand insertCommand = new SqlCommand(insertQuery, dbConnection);
+            SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, DBRunner.getDBConnection());
             insertCommand.Parameters.AddWithValue($"@{Constants.InstallmentRecordTable.installment_ammount}", installmentAmmount);
             insertCommand.Parameters.AddWithValue($"@{Constants.InstallmentRecordTable.remaining_ammount}", remainingAmmount);
             insertCommand.Parameters.AddWithValue($"@{Constants.InstallmentRecordTable.total_ammount}", totalAmmount);

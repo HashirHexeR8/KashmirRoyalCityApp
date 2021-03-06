@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace KashmirRoyalCityApp
 {
@@ -125,26 +126,22 @@ namespace KashmirRoyalCityApp
                 {
                     NomineeInfoDTO nomineeInfoDTO = new NomineeInfoDTO(this, customerInfoControl, plotInfoControl.plotRegNo);
                     PlotInfoDTO plotInfoDTO = new PlotInfoDTO(plotInfoControl);
-                    SqlConnection sqlConnection = new SqlConnection();
                     int customerId = 0;
-                    sqlConnection.ConnectionString = Constants.ConnectionString;
                     try
                     {
-                        sqlConnection.Open();
-                        using (SqlCommand insertPlotInfocommand = plotInfoDTO.insertQuery(sqlConnection))
+                        using (SQLiteCommand insertPlotInfocommand = plotInfoDTO.insertQuery())
                         {
                             insertPlotInfocommand.ExecuteNonQuery();
                         }
-                        using (SqlCommand insertCustomerInfoCommand = nomineeInfoDTO.insertQuery(sqlConnection))
+                        using (SQLiteCommand insertCustomerInfoCommand = nomineeInfoDTO.insertQuery())
                         {
                             customerId = (int)insertCustomerInfoCommand.ExecuteNonQuery();
                         }
                         InstallmentDTO installmentInfoDTO = new InstallmentDTO(int.Parse(plotInfoControl.plotInstallmentAmmount), int.Parse(plotInfoControl.cashReceived) + int.Parse(plotInfoControl.remainingAmmount), int.Parse(plotInfoControl.cashReceived), customerId, plotInfoControl.plotRegNo, plotInfoControl.plotIssueDate);
-                        using (SqlCommand insertInstallmentInfoCommand = installmentInfoDTO.insertQuery(sqlConnection))
+                        using (SQLiteCommand insertInstallmentInfoCommand = installmentInfoDTO.insertQuery())
                         {
                             insertInstallmentInfoCommand.ExecuteNonQuery();
                         }
-                        sqlConnection.Close();
                     }
                     catch (Exception ex)
                     {

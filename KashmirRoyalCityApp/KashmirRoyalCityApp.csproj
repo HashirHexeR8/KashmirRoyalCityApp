@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Report.Viewer" Version="11.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
   </ItemGroup>
 
 </Project>

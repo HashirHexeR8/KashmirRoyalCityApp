@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -11,11 +11,9 @@ namespace KashmirRoyalCityApp
 {
     public partial class PlotRecordViewer : Form
     {
-        SqlConnection mSqlConnection = new SqlConnection();
         public PlotRecordViewer()
         {
             InitializeComponent();
-            mSqlConnection.ConnectionString = Constants.ConnectionString;
             string value = "";
             if (InputBox("Plot Information", "Enter Plot No or Plot Block:", ref value) == DialogResult.OK)
             {
@@ -25,13 +23,12 @@ namespace KashmirRoyalCityApp
 
         public void searchPlotInfo(string value)
         {
-            mSqlConnection.Open();
-            SqlCommand selectCommand = new SqlCommand(Constants.PlotInfoTable.plot_info_query, mSqlConnection);
+            SQLiteCommand selectCommand = new SQLiteCommand(Constants.PlotInfoTable.plot_info_query, DBRunner.getDBConnection());
             selectCommand.Parameters.AddWithValue($"@{Constants.PlotInfoTable.plot_number}", value);
             selectCommand.Parameters.AddWithValue($"@{Constants.PlotInfoTable.plot_block}", value);
             try
             {
-                SqlDataReader resultSet = selectCommand.ExecuteReader();
+                SQLiteDataReader resultSet = selectCommand.ExecuteReader();
                 DataTable installmentDataTable = new DataTable();
                 installmentDataTable.Load(resultSet);
                 dataGridView1.DataSource = installmentDataTable;
@@ -39,9 +36,7 @@ namespace KashmirRoyalCityApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                mSqlConnection.Close();
             }
-            mSqlConnection.Close();
         }
 
         public static DialogResult InputBox(string title, string promptText, ref string value)

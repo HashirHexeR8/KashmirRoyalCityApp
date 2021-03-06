@@ -7,7 +7,7 @@ namespace KashmirRoyalCityApp
 {
     static class Constants
     {
-        public static string ConnectionString = ("Data Source=DESKTOP-KQQ01QD\\SQLEXPRESS;Initial Catalog=C:\\PROGRAM FILES\\MICROSOFT SQL SERVER\\MSSQL15.SQLEXPRESS\\MSSQL\\DATA\\KASHMIRROYALCITYDB.MDF;Integrated Security=True");
+        public static string DBName = "kashmirRoyalCity.db";
         public interface PlotInfoTable
         {
             static string table_name = "plot_info";
@@ -23,7 +23,7 @@ namespace KashmirRoyalCityApp
             static string plot_is_commercial = "plot_is_commercial";
             static string plot_is_corner = "plot_is_corner";
 
-            static string plot_info_query = $"select plot_number AS 'Plot Number', plot_block AS 'Plot Block', plot_size AS 'Plot Size', plot_price AS 'Plot Price', plot_registration_date AS 'Registration Date', customer_name AS 'Customer Name', customer_cnic AS 'CNIC', customer_current_address AS 'Current Address', customer_permanent_address AS 'Permenant Address', customer_contact_mobile AS 'Mobile #', customer_contact_home AS 'Home #', customer_email AS 'Email', customer_successor_name AS 'Nominee Name', customer_successor_relation AS 'Relation with Nominee', customer_successor_address AS 'Nominee Address' from plot_info left join customer_info cs ON cs.customer_plot_reg_no = plot_reg_id WHERE plot_number LIKE @{plot_number} OR plot_block LIKE @{plot_block}";
+            static string plot_info_query = $"select plot_number AS 'Plot Number', plot_block AS 'Plot Block', plot_size AS 'Plot Size', plot_price AS 'Plot Price', plot_registration_date AS 'Registration Date', customer_name AS 'Customer Name', customer_cnic AS 'CNIC', customer_current_address AS 'Current Address', customer_permanent_address AS 'Permenant Address', customer_contact_number_mobile AS 'Mobile #', customer_contact_number_home AS 'Home #', customer_email AS 'Email', customer_successor_name AS 'Nominee Name', customer_successor_relation AS 'Relation with Nominee', customer_successor_address AS 'Nominee Address' from plot_info left join customer_info cs ON cs.customer_plot_reg_no = plot_reg_id WHERE plot_number LIKE @{plot_number} OR plot_block LIKE @{plot_block}";
         }
 
         public interface CustomerInfoTable
@@ -31,11 +31,12 @@ namespace KashmirRoyalCityApp
             static string table_name = "customer_info";
 
             //Plot Info Column Name
+            static string customer_id = "cutomer_id";
             static string customer_name = "customer_name";
             static string customer_father_name = "customer_father_name";
             static string customer_cnic = "customer_cnic";
             static string customer_current_address = "customer_current_address";
-            static string customer_permenant_address = "customer_permenat_address";
+            static string customer_permenant_address = "customer_permanent_address";
             static string customer_profession = "customer_profession";
             static string customer_contact_number_mobile = "customer_contact_number_mobile";
             static string customer_contact_number_home = "customer_contact_number_home";
@@ -65,6 +66,17 @@ namespace KashmirRoyalCityApp
                 $"LEFT JOIN plot_info as plot ON install.{plot_reg_no} = plot.{PlotInfoTable.plot_reg_id} WHERE {plot_reg_no} = @{plot_reg_no}";
 
             static string installment_single_item_data_query = $"SELECT TOP 1 {plot_reg_no}, {installment_ammount}, {total_ammount}, {customer_id}, {remaining_ammount}  FROM {table_name} WHERE {plot_reg_no} = @{plot_reg_no} ORDER BY {remaining_ammount} ASC";
+        }
+        
+        public interface userInfoTable
+        {
+            static string table_name = "user_info";
+
+            //user info table name
+            static string user_id = "user_id";
+            static string user_name = "user_name";
+            static string user_password = "user_password";
+            static string user_full_name = "user_full_name";
         }
     }
 }

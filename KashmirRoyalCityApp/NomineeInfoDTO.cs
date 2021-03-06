@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Text;
 
 namespace KashmirRoyalCityApp
@@ -46,10 +46,10 @@ namespace KashmirRoyalCityApp
             customerPlotRegNo = plotRegNo;
         }
 
-        public SqlCommand insertQuery(SqlConnection dbConnection)
+        public SQLiteCommand insertQuery()
         {
-            string insertQuery = $"INSERT INTO customer_info VALUES(@{Constants.CustomerInfoTable.customer_name}, @{Constants.CustomerInfoTable.customer_father_name}, @{Constants.CustomerInfoTable.customer_cnic}, @{Constants.CustomerInfoTable.customer_current_address}, @{Constants.CustomerInfoTable.customer_permenant_address}, @{Constants.CustomerInfoTable.customer_profession}, @{Constants.CustomerInfoTable.customer_contact_number_mobile}, @{Constants.CustomerInfoTable.customer_contact_number_home}, @{Constants.CustomerInfoTable.customer_contact_number_office}, @{Constants.CustomerInfoTable.customer_email}, @{Constants.CustomerInfoTable.customer_successor_name}, @{Constants.CustomerInfoTable.customer_successor_father_name}, @{Constants.CustomerInfoTable.customer_successor_relation}, @{Constants.CustomerInfoTable.customer_successor_address}, @{Constants.CustomerInfoTable.customer_plot_reg_no}); SELECT SCOPE_IDENTITY()";
-            SqlCommand insertCommand = new SqlCommand(insertQuery, dbConnection);
+            string insertQuery = $"INSERT INTO customer_info ({Constants.CustomerInfoTable.customer_name}, {Constants.CustomerInfoTable.customer_father_name}, {Constants.CustomerInfoTable.customer_cnic}, {Constants.CustomerInfoTable.customer_current_address}, {Constants.CustomerInfoTable.customer_permenant_address}, {Constants.CustomerInfoTable.customer_profession}, {Constants.CustomerInfoTable.customer_contact_number_mobile}, {Constants.CustomerInfoTable.customer_contact_number_home}, {Constants.CustomerInfoTable.customer_contact_number_office}, {Constants.CustomerInfoTable.customer_email}, {Constants.CustomerInfoTable.customer_successor_name}, {Constants.CustomerInfoTable.customer_successor_father_name}, {Constants.CustomerInfoTable.customer_successor_relation}, {Constants.CustomerInfoTable.customer_successor_address}  , {Constants.CustomerInfoTable.customer_plot_reg_no}) VALUES(@{Constants.CustomerInfoTable.customer_name}, @{Constants.CustomerInfoTable.customer_father_name}, @{Constants.CustomerInfoTable.customer_cnic}, @{Constants.CustomerInfoTable.customer_current_address}, @{Constants.CustomerInfoTable.customer_permenant_address}, @{Constants.CustomerInfoTable.customer_profession}, @{Constants.CustomerInfoTable.customer_contact_number_mobile}, @{Constants.CustomerInfoTable.customer_contact_number_home}, @{Constants.CustomerInfoTable.customer_contact_number_office}, @{Constants.CustomerInfoTable.customer_email}, @{Constants.CustomerInfoTable.customer_successor_name}, @{Constants.CustomerInfoTable.customer_successor_father_name}, @{Constants.CustomerInfoTable.customer_successor_relation}, @{Constants.CustomerInfoTable.customer_successor_address}, @{Constants.CustomerInfoTable.customer_plot_reg_no}); SELECT last_insert_rowid()";
+            SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, DBRunner.getDBConnection());
             insertCommand.Parameters.AddWithValue($"@{Constants.CustomerInfoTable.customer_name}", customerName);
             insertCommand.Parameters.AddWithValue($"@{Constants.CustomerInfoTable.customer_father_name}", customerFatherName);
             insertCommand.Parameters.AddWithValue($"@{Constants.CustomerInfoTable.customer_cnic}", customerCnic);

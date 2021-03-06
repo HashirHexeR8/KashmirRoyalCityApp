@@ -5,20 +5,18 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace KashmirRoyalCityApp
 {
     public partial class AddInstallmentControl : UserControl
     {
-        SqlConnection mSqlConnection = new SqlConnection();
         int mRemainingAmmount = 0;
         string mCustomerId = "";
         int mTotalAmmount = 0;
         public AddInstallmentControl()
         {
             InitializeComponent();
-            mSqlConnection.ConnectionString = Constants.ConnectionString;
             string value = "";
             if (InputBox("Customer Installment", "Enter Registration No:", ref value) == DialogResult.OK)
             {
@@ -28,12 +26,11 @@ namespace KashmirRoyalCityApp
 
         private bool searchPlotInfo(string plotRegNo)
         {
-            mSqlConnection.Open();
-            SqlCommand selectCommand = new SqlCommand(Constants.InstallmentRecordTable.installment_data_from_registration_number_query, mSqlConnection);
+            SQLiteCommand selectCommand = new SQLiteCommand(Constants.InstallmentRecordTable.installment_data_from_registration_number_query, DBRunner.getDBConnection());
             selectCommand.Parameters.AddWithValue($"@{Constants.InstallmentRecordTable.plot_reg_no}", plotRegNo);
             try
             {
-                SqlDataReader resultSet = selectCommand.ExecuteReader();
+                SQLiteDataReader resultSet = selectCommand.ExecuteReader();
                 DataTable installmentDataTable = new DataTable();
                 installmentDataTable.Load(resultSet);
                 installmentDataGridView.DataSource = installmentDataTable;
@@ -41,13 +38,12 @@ namespace KashmirRoyalCityApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                mSqlConnection.Close();
             }
-            SqlCommand selectLatestInstallmentRecordCommand = new SqlCommand(Constants.InstallmentRecordTable.installment_single_item_data_query, mSqlConnection);
+            SQLiteCommand selectLatestInstallmentRecordCommand = new SQLiteCommand(Constants.InstallmentRecordTable.installment_single_item_data_query, DBRunner.getDBConnection());
             selectLatestInstallmentRecordCommand.Parameters.AddWithValue($"@{Constants.InstallmentRecordTable.plot_reg_no}", plotRegNo);
             try
             {
-                SqlDataReader resultSet = selectLatestInstallmentRecordCommand.ExecuteReader();
+                SQLiteDataReader resultSet = selectLatestInstallmentRecordCommand.ExecuteReader();
                 while(resultSet.Read())
                 {
                     mCustomerId = resultSet.GetString(Constants.InstallmentRecordTable.customer_id);
@@ -58,9 +54,7 @@ namespace KashmirRoyalCityApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                mSqlConnection.Close();
             }
-            mSqlConnection.Close();
             return false;
         }
 
@@ -104,14 +98,12 @@ namespace KashmirRoyalCityApp
         {
             try
             {
-                mSqlConnection.Open();
                 InstallmentDTO installmentInfoDTO = new InstallmentDTO(installmentAmmountValue, mTotalAmmount, mRemainingAmmount, installmentAmmountValue, int.Parse(mCustomerId), plotRegNo, installmentDate);
-                using (SqlCommand insertInstallmentInfoCommand = installmentInfoDTO.insertQuery(mSqlConnection))
+                using (SQLiteCommand insertInstallmentInfoCommand = installmentInfoDTO.insertQuery())
                 {
                     insertInstallmentInfoCommand.ExecuteNonQuery();
                 }
                 MessageBox.Show("Installment Ammount Received Successfully.", "Success.");
-                mSqlConnection.Close();
                 searchPlotInfo(plotRegNo);
                 tbRegistrationNumber.Text = "";
                 tbInstallmentAmmount.Text = "";
@@ -120,7 +112,6 @@ namespace KashmirRoyalCityApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error");
-                mSqlConnection.Close();
 
             }
         }
