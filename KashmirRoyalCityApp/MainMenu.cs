@@ -29,6 +29,7 @@ namespace KashmirRoyalCityApp
         private void btnNewPlotMouse_Exit(object sender, EventArgs e)
         {
             lblInfoTip.Text = "Please Select an option to continue";
+            //btnNewPlot.BackColor = Color.Transparent;
         }
 
         private void btnPlotRecord_Click(object sender, EventArgs e)
@@ -61,6 +62,16 @@ namespace KashmirRoyalCityApp
         private void btnInstallment_Exit(object sender, EventArgs e)
         {
             lblInfoTip.Text = "Please Select an option to continue";
+        }
+
+        private void pb_Icon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInstallment_MouseHover(object sender, EventArgs e)
+        {
+            //btnNewPlot.BackColor=Color.PeachPuff;
         }
     }
 }

@@ -56,6 +56,7 @@ namespace KashmirRoyalCityApp
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnNomineeInfo);
             this.panel1.Controls.Add(this.btnCustomerInfo);
             this.panel1.Controls.Add(this.btnPlotInfo);
@@ -67,9 +68,10 @@ namespace KashmirRoyalCityApp
             // 
             // btnNomineeInfo
             // 
-            this.btnNomineeInfo.Location = new System.Drawing.Point(11, 532);
+            this.btnNomineeInfo.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNomineeInfo.Location = new System.Drawing.Point(16, 537);
             this.btnNomineeInfo.Name = "btnNomineeInfo";
-            this.btnNomineeInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnNomineeInfo.Size = new System.Drawing.Size(209, 80);
             this.btnNomineeInfo.TabIndex = 3;
             this.btnNomineeInfo.Text = "Nominee Info";
             this.btnNomineeInfo.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@ namespace KashmirRoyalCityApp
             // 
             // btnCustomerInfo
             // 
-            this.btnCustomerInfo.Location = new System.Drawing.Point(11, 393);
+            this.btnCustomerInfo.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomerInfo.Location = new System.Drawing.Point(16, 398);
             this.btnCustomerInfo.Name = "btnCustomerInfo";
-            this.btnCustomerInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnCustomerInfo.Size = new System.Drawing.Size(209, 80);
             this.btnCustomerInfo.TabIndex = 2;
             this.btnCustomerInfo.Text = "Customer Info";
             this.btnCustomerInfo.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@ namespace KashmirRoyalCityApp
             // 
             // btnPlotInfo
             // 
-            this.btnPlotInfo.Location = new System.Drawing.Point(11, 253);
+            this.btnPlotInfo.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPlotInfo.Location = new System.Drawing.Point(16, 258);
             this.btnPlotInfo.Name = "btnPlotInfo";
-            this.btnPlotInfo.Size = new System.Drawing.Size(220, 80);
+            this.btnPlotInfo.Size = new System.Drawing.Size(209, 80);
             this.btnPlotInfo.TabIndex = 1;
             this.btnPlotInfo.Text = "Plot Info";
             this.btnPlotInfo.UseVisualStyleBackColor = true;
@@ -106,7 +110,7 @@ namespace KashmirRoyalCityApp
             // 
             // NewPlotRecordForm
             // 
-            this.ClientSize = new System.Drawing.Size(1254, 953);
+            this.ClientSize = new System.Drawing.Size(1213, 911);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
