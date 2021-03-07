@@ -16,6 +16,8 @@ namespace KashmirRoyalCityApp
         public NomineeInfoControl()
         {
             InitializeComponent();
+            this.Anchor = AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Left;
+            this.Dock = DockStyle.Fill;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

@@ -14,6 +14,8 @@ namespace KashmirRoyalCityApp
         public PlotInfoControl()
         {
             InitializeComponent();
+            this.Anchor = AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom | AnchorStyles.Left;
+            this.Dock = DockStyle.Fill;
         }
 
         public string plotRegNo

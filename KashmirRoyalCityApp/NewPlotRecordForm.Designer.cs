@@ -97,19 +97,20 @@ namespace KashmirRoyalCityApp
             // 
             // panelMain
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMain.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelMain.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelMain.Location = new System.Drawing.Point(252, 3);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(993, 940);
             this.panelMain.TabIndex = 1;
             // 
-            // MainMenu
+            // NewPlotRecordForm
             // 
             this.ClientSize = new System.Drawing.Size(1254, 953);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "MainMenu";
+            this.Name = "NewPlotRecordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
